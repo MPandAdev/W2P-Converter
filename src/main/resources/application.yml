@@ -1,0 +1,26 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /
+
+spring:
+  devtools:
+    restart:
+      enabled: false
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+file:
+  check:
+    maxSize: 10
+    types:
+#      pdf: 255044462D312E
+      doc: D0CF11E0
+      docx: 504B030414
+logging:
+  level:
+    web: debug
